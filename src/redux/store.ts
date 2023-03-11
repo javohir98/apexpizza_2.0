@@ -7,7 +7,7 @@ export const store = configureStore({
         [apiSlice.reducerPath]: apiSlice.reducer,
         counter: counterSlice
     },
-    devTools: process.env.REACT_APP_NODE_ENV !== 'production',
+    devTools: import.meta.env.MODE !== 'production',
     middleware: getDefaultMiddleware =>
         getDefaultMiddleware().concat(apiSlice.middleware)
 })
