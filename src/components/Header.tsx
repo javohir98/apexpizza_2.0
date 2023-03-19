@@ -32,6 +32,11 @@ const LinkList = styled.div`
   gap: 10px;
   max-width: 100%;
   overflow-x: auto;
+
+  &::-webkit-scrollbar{
+    width: 0px!important;
+    height: 0px!important;
+  }
 `;
 
 const Link = styled.a`
@@ -46,7 +51,10 @@ const Link = styled.a`
     background: #fbf8ce;
     transition: all .3s ease;
     margin: 10px 0;
-    color: #000;
+    font-family: Rubik;
+    color: #1E1B26;
+    font-size: 18px;
+    font-weight: 300;
 
     &.active {
       background-color: #fcea04!important; 
