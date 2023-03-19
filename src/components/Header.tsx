@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   transition: all .3s ease;
   border-radius: 0;
   z-index: 1;
-  /* margin: 25px auto 0; */
+  margin-top: 18px;
 
   &.sticky {
     box-shadow: -5px 0 15px rgb(0 0 0 / 20%);
